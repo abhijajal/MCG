@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.customerdataapp.EditorActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                />
+            <EditText
+                android:id="@+id/CName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "/>
+            <EditText
+                android:id="@+id/CAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:text="0"
+                android:textAlignment="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No: "/>
+            <EditText
+                android:id="@+id/CPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:textAlignment="center"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "/>
+            <EditText
+                android:id="@+id/CDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:textAlignment="center"
+                android:inputType="date" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- LE - DV starts //////////////////////////////-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left Eye - Distant Vision"
+                android:textAlignment="center"
+                />
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="SPH" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="CYL" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="AXIS" />
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_L_SPH"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_L_CYL"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_L_AXIS"
+                    android:text="0"
+                    />
+            </TableRow>
+            <!-- LE - DV ends //////////////////////////////-->
+
+
+            <!-- RE - DV starts //////////////////////////////-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Right Eye - Distant Vision"
+                android:textAlignment="center"
+                />
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="SPH" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="CYL" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="AXIS" />
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_R_SPH"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_R_CYl"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/DV_R_AXIS"
+                    android:text="0"
+                    />
+            </TableRow>
+            <!-- RE - DV ends //////////////////////////////-->
+
+            <!-- LE - NV starts //////////////////////////////-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left Eye - Near Vision"
+                android:textAlignment="center"
+                />
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="SPH" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="CYL" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="AXIS" />
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/NV_L_SPH"
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:text="0"
+                    />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/NV_L_CYL"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/NV_L_AXIS"
+                    android:text="0"
+                    />
+            </TableRow>
+            <!-- LE - NV ends //////////////////////////////-->
+
+
+            <!-- RE - NV starts //////////////////////////////-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Right Eye - Near Vision"
+                android:textAlignment="center"
+                />
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="SPH"
+
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="CYL" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="AXIS" />
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/NV_R_SPH"
+                    android:text="0"
+                    />
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/NV_R_CYL"
+                    android:text="0"
+                    />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textAlignment="center"
+                    android:id="@+id/NV_R_AXIS"
+                    android:text="0"
+                    />
+            </TableRow>
+            <!-- RE - NV ends //////////////////////////////-->
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments: "/>
+
+            <EditText
+                android:id="@+id/CComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
